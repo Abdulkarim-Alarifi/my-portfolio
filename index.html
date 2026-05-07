@@ -43,7 +43,6 @@
             overflow-x: hidden;
         }
 
-        /* Nav */
         nav {
             position: fixed;
             top: 0;
@@ -69,9 +68,7 @@
             gap: 0.5rem;
         }
 
-        .nav-logo span {
-            color: var(--accent-color);
-        }
+        .nav-logo span { color: var(--accent-color); }
 
         .nav-links {
             display: flex;
@@ -98,9 +95,7 @@
             transition: width 0.3s ease;
         }
 
-        .nav-links a:hover::after {
-            width: 100%;
-        }
+        .nav-links a:hover::after { width: 100%; }
 
         .nav-actions {
             display: flex;
@@ -122,11 +117,8 @@
             transition: background-color 0.2s;
         }
 
-        .theme-toggle:hover {
-            background-color: var(--secondary-bg);
-        }
+        .theme-toggle:hover { background-color: var(--secondary-bg); }
 
-        /* Sections */
         section {
             padding: 7rem 5% 5rem;
             min-height: 100vh;
@@ -141,11 +133,7 @@
             width: 100%;
         }
 
-        h1,
-        h2,
-        h3 {
-            line-height: 1.2;
-        }
+        h1, h2, h3 { line-height: 1.2; }
 
         h2 {
             font-size: 2.5rem;
@@ -167,7 +155,6 @@
             border-radius: 4px;
         }
 
-        /* Hero */
         .hero {
             align-items: flex-start;
             text-align: left;
@@ -192,9 +179,7 @@
             text-align: left;
         }
 
-        .hero h2::after {
-            display: none;
-        }
+        .hero h2::after { display: none; }
 
         .hero p {
             font-size: 1.2rem;
@@ -226,7 +211,6 @@
             box-shadow: 0 10px 20px -10px var(--accent-color);
         }
 
-        /* About */
         .about-content {
             font-size: 1.15rem;
             line-height: 1.8;
@@ -236,7 +220,7 @@
             background-color: var(--card-bg);
             padding: 3rem;
             border-radius: 20px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
             border: 1px solid var(--border-color);
             position: relative;
         }
@@ -252,7 +236,6 @@
             font-family: serif;
         }
 
-        /* Skills */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -264,13 +247,13 @@
             padding: 2.5rem 2rem;
             border-radius: 20px;
             border: 1px solid var(--border-color);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .skill-category:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
             border-color: var(--accent-color);
         }
 
@@ -283,9 +266,7 @@
             gap: 0.75rem;
         }
 
-        .skill-category h3 svg {
-            color: var(--accent-color);
-        }
+        .skill-category h3 svg { color: var(--accent-color); }
 
         .skill-list {
             display: flex;
@@ -310,7 +291,6 @@
             border-color: var(--accent-color);
         }
 
-        /* Experience */
         .timeline {
             max-width: 800px;
             margin: 0 auto;
@@ -334,9 +314,7 @@
             margin-bottom: 3.5rem;
         }
 
-        .timeline-item:last-child {
-            margin-bottom: 0;
-        }
+        .timeline-item:last-child { margin-bottom: 0; }
 
         .timeline-item::before {
             content: '';
@@ -357,7 +335,7 @@
             padding: 2rem;
             border-radius: 16px;
             border: 1px solid var(--border-color);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
             transition: transform 0.3s;
         }
 
@@ -424,11 +402,8 @@
             font-weight: bold;
         }
 
-        .timeline-content li strong {
-            color: var(--text-color);
-        }
+        .timeline-content li strong { color: var(--text-color); }
 
-        /* Education */
         .education-card {
             background-color: var(--card-bg);
             padding: 3rem;
@@ -437,7 +412,7 @@
             max-width: 600px;
             margin: 0 auto;
             text-align: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
             transition: transform 0.3s;
         }
 
@@ -463,7 +438,6 @@
             font-weight: 500;
         }
 
-        /* Contact */
         .contact {
             text-align: center;
             background: linear-gradient(to bottom, var(--bg-color), var(--secondary-bg));
@@ -498,44 +472,17 @@
             font-size: 1rem;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .hero h1 {
-                font-size: 3rem;
-            }
-
-            .timeline::before {
-                left: 0;
-            }
-
-            .timeline-item {
-                padding-left: 2rem;
-            }
-
-            .timeline-item::before {
-                left: -8px;
-            }
-
-            .timeline-header {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-
-            section {
-                padding: 5rem 5% 4rem;
-            }
-
-            h2 {
-                font-size: 2rem;
-                margin-bottom: 2.5rem;
-            }
+            .nav-links { display: none; }
+            .hero h1 { font-size: 3rem; }
+            .timeline::before { left: 0; }
+            .timeline-item { padding-left: 2rem; }
+            .timeline-item::before { left: -8px; }
+            .timeline-header { flex-direction: column; gap: 0.5rem; }
+            section { padding: 5rem 5% 4rem; }
+            h2 { font-size: 2rem; margin-bottom: 2.5rem; }
         }
 
-        /* Animations */
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
@@ -547,17 +494,9 @@
             transform: translateY(0);
         }
 
-        .stagger-1 {
-            transition-delay: 0.1s;
-        }
-
-        .stagger-2 {
-            transition-delay: 0.2s;
-        }
-
-        .stagger-3 {
-            transition-delay: 0.3s;
-        }
+        .stagger-1 { transition-delay: 0.1s; }
+        .stagger-2 { transition-delay: 0.2s; }
+        .stagger-3 { transition-delay: 0.3s; }
     </style>
 </head>
 
@@ -576,40 +515,30 @@
         </div>
         <div class="nav-actions">
             <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
-                <!-- Moon icon for light mode -->
-                <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    style="display: none;">
+                <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
                     <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
                 </svg>
-                <!-- Sun icon for dark mode -->
-                <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="4"></circle>
-                    <path d="M12 2v2"></path>
-                    <path d="M12 20v2"></path>
-                    <path d="m4.93 4.93 1.41 1.41"></path>
-                    <path d="m17.66 17.66 1.41 1.41"></path>
-                    <path d="M2 12h2"></path>
-                    <path d="M20 12h2"></path>
-                    <path d="m6.34 17.66-1.41 1.41"></path>
-                    <path d="m19.07 4.93-1.41 1.41"></path>
+                    <path d="M12 2v2"></path><path d="M12 20v2"></path>
+                    <path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path>
+                    <path d="M2 12h2"></path><path d="M20 12h2"></path>
+                    <path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path>
                 </svg>
             </button>
         </div>
     </nav>
 
+    <!-- HERO -->
     <section id="hero" class="hero">
         <div class="container">
             <h2 class="fade-in stagger-1">Hello, I'm</h2>
             <h1 class="fade-in stagger-2">Abdulkarim Shaker Alarifi</h1>
-            <p class="fade-in stagger-3">Certified Google Cloud Associate Cloud Engineer and Computer Science graduate
-                specializing in cloud infrastructure, automation, and DevOps.</p>
+            <p class="fade-in stagger-3">Cloud Engineer & System Administrator specializing in VMware, OpenStack, Exchange, and DevOps automation on GCP and AWS.</p>
             <div class="fade-in stagger-3">
                 <a href="#contact" class="btn">
                     Get In Touch
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="5" y1="12" x2="19" y2="12"></line>
                         <polyline points="12 5 19 12 12 19"></polyline>
                     </svg>
@@ -618,19 +547,17 @@
         </div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about">
         <div class="container fade-in">
             <h2>About Me</h2>
             <div class="about-content">
-                Certified Google Cloud Associate Cloud Engineer and Computer Science graduate with a strong focus on
-                DevOps practices and Cloud Infrastructure. Expertly trained in automating cloud environments using
-                Terraform (IaC), managing GCP services, and securing networks via FortiGate. Proven track record in
-                transitioning business requirements into scalable technical solutions and streamlining cloud operations
-                through automation. Passionate about optimizing CI/CD pipelines and enhancing system reliability.
+                Certified Google Cloud Associate Cloud Engineer and Computer Science graduate with hands-on experience in Cloud Infrastructure, Virtualization, and System Administration. Proven expertise in VMware vSphere cluster management, OpenStack administration, and Exchange Server migration and administration. Skilled in Active Directory, identity management, and implementing disaster recovery and high availability solutions. Passionate about optimizing cloud environments and automating deployments through DevOps practices using tools like Terraform and GitHub Actions on platforms including GCP and AWS.
             </div>
         </div>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills">
         <div class="container fade-in">
             <h2>Technical Skills</h2>
@@ -638,26 +565,71 @@
 
                 <div class="skill-category">
                     <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
                         </svg>
-                        Cloud & DevOps
+                        Cloud & Virtualization
                     </h3>
                     <div class="skill-list">
                         <span class="skill-tag">GCP</span>
-                        <span class="skill-tag">Cloud Architecture</span>
-                        <span class="skill-tag">Terraform (IaC)</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">VMware vSphere</span>
                         <span class="skill-tag">OpenStack</span>
                         <span class="skill-tag">OpenShift</span>
-                        <span class="skill-tag">VMware</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
                     <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        DevOps
+                    </h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Terraform (IaC)</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                        <span class="skill-tag">CI/CD Pipelines</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        Infrastructure & Operations
+                    </h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Disaster Recovery</span>
+                        <span class="skill-tag">High Availability</span>
+                        <span class="skill-tag">Exchange Server</span>
+                        <span class="skill-tag">Active Directory</span>
+                        <span class="skill-tag">Group Policy</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                        Networking & Security
+                    </h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">FortiGate Firewalls</span>
+                        <span class="skill-tag">VPC Networking</span>
+                        <span class="skill-tag">DMARC</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                             <line x1="8" y1="21" x2="16" y2="21"></line>
                             <line x1="12" y1="17" x2="12" y2="21"></line>
@@ -673,27 +645,11 @@
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                        </svg>
-                        Networking & Security
-                    </h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">FortiGate Firewalls</span>
-                        <span class="skill-tag">VPC Networking</span>
-                        <span class="skill-tag">Active Directory</span>
-                        <span class="skill-tag">Network Security</span>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
+    <!-- EXPERIENCE -->
     <section id="experience">
         <div class="container fade-in">
             <h2>Experience</h2>
@@ -707,9 +663,7 @@
                                 <h4>DETASAD</h4>
                             </div>
                             <div class="timeline-date">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                                     <line x1="16" y1="2" x2="16" y2="6"></line>
                                     <line x1="8" y1="2" x2="8" y2="6"></line>
@@ -720,15 +674,11 @@
                         </div>
                         <div class="timeline-content">
                             <ul>
-                                <li><strong>Cost Analysis:</strong> Analyzing Total Cost of Ownership (TCO) and
-                                    optimizing expenditure models (CapEx and OpEx) for cloud deployments.</li>
-                                <li><strong>Infrastructure Admin:</strong> Managing OpenStack, OpenShift, and VMware
-                                    environments.</li>
-                                <li><strong>SLA Management:</strong> Ensuring all technical operations and cloud
-                                    services strictly adhere to Service Level Agreements (SLA) for high availability.
-                                </li>
-                                <li><strong>Network Security:</strong> Implementing and managing FortiGate Firewalls.
-                                </li>
+                                <li><strong>VMware Administration:</strong> Managed vSphere clusters including VM provisioning from templates, shared storage configuration, network setup using team-provided IDs, and host maintenance with zero-downtime VM migration. Implemented DR and HA solutions across the environment.</li>
+                                <li><strong>Exchange Administration:</strong> Migrated Exchange 2016 → 2019 including certificate transfer, DAG configuration, and Witness Server setup. Managed mailbox permissions using least privilege principles and handled bulk user removals.</li>
+                                <li><strong>Active Directory & Identity Management:</strong> Created new domain servers, joined machines to domain, managed user accounts, assigned group policies, and configured file permissions.</li>
+                                <li><strong>OpenStack Administration:</strong> Diagnosed and restored failed services using systemctl. Recovered failed instances by provisioning replacement VMs with identical specs and migrating floating IPs.</li>
+                                <li><strong>Cost Analysis:</strong> Performed TCO calculations and CapEx/OpEx modeling for cloud deployments.</li>
                             </ul>
                         </div>
                     </div>
@@ -739,12 +689,10 @@
                         <div class="timeline-header">
                             <div class="timeline-title">
                                 <h3>Computer Science Specialist</h3>
-                                <h4>Middle East Propulsion Company (Tmheer)</h4>
+                                <h4>Middle East Propulsion Company (Tamheer)</h4>
                             </div>
                             <div class="timeline-date">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                                     <line x1="16" y1="2" x2="16" y2="6"></line>
                                     <line x1="8" y1="2" x2="8" y2="6"></line>
@@ -755,12 +703,10 @@
                         </div>
                         <div class="timeline-content">
                             <ul>
-                                <li>Worked on virtual machines (VMs) for server management and testing environments.
-                                </li>
+                                <li>Worked on virtual machines (VMs) for server management and testing environments.</li>
                                 <li>Managed server backups, configured backup types, and documented records.</li>
                                 <li>Worked with databases, creating parameters and handling SQL tasks.</li>
-                                <li>Administered Active Directory, including user account management, file permissions,
-                                    and profile updates.</li>
+                                <li>Administered Active Directory, including user account management, file permissions, and profile updates.</li>
                             </ul>
                         </div>
                     </div>
@@ -774,9 +720,7 @@
                                 <h4>Al-Qablan for Heat Pipes (COOP)</h4>
                             </div>
                             <div class="timeline-date">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                                     <line x1="16" y1="2" x2="16" y2="6"></line>
                                     <line x1="8" y1="2" x2="8" y2="6"></line>
@@ -789,8 +733,7 @@
                             <ul>
                                 <li>Developed database logic and procedures to manage operational data efficiently.</li>
                                 <li>Performed regular maintenance and optimization of the database system.</li>
-                                <li>Provided Help Desk support, resolving employee technical issues and ensuring smooth
-                                    IT operations.</li>
+                                <li>Provided Help Desk support, resolving employee technical issues and ensuring smooth IT operations.</li>
                             </ul>
                         </div>
                     </div>
@@ -800,37 +743,143 @@
         </div>
     </section>
 
+    <!-- EDUCATION -->
     <section id="education">
         <div class="container fade-in">
             <h2>Education</h2>
             <div class="education-card">
                 <div class="edu-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                         <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                     </svg>
                 </div>
                 <h3>B.Sc. in Computer Science</h3>
-                <p>Shaqra University</p>
+                <p>Shaqra University &nbsp;|&nbsp; 2020 – 2025</p>
             </div>
         </div>
     </section>
 
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="container fade-in">
+            <h2>Projects</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-title">
+                                <h3>Cloud Portfolio Website</h3>
+                                <h4>AWS S3 &nbsp;|&nbsp; CloudFront &nbsp;|&nbsp; GitHub Actions CI/CD</h4>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <p>Designed and deployed a personal portfolio website on AWS, utilizing S3 for static website hosting and CloudFront as a CDN for fast and secure content delivery. Automated the deployment pipeline using GitHub Actions, enabling continuous deployment on every code push to the main branch.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-title">
+                                <h3>Infrastructure as Code</h3>
+                                <h4>GCP &nbsp;|&nbsp; Terraform</h4>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <p>Designed and automated a modular GCP infrastructure using Terraform, implementing GCS Remote Backend for state management and team collaboration. Successfully imported legacy VM instances into Terraform state, configured custom VPCs with multi-regional subnets via Registry modules, and established granular Firewall Rules to secure cloud resources.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-title">
+                                <h3>SkyDetect</h3>
+                                <h4>Graduation Project &nbsp;|&nbsp; AI &nbsp;|&nbsp; Drone System</h4>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <p>An AI-based drone system for pothole detection using image and GPS. The project captures high-resolution road images via drones, processes them using CNN models to detect potholes, marks them with boundary boxes, records their coordinates, and sends them to the municipality.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+        <div class="container fade-in">
+            <h2>Certifications</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="6"></circle>
+                            <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                        </svg>
+                        Google Cloud Certified
+                    </h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Associate Cloud Engineer &nbsp;|&nbsp; 2026</p>
+                </div>
+                <div class="skill-category">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="6"></circle>
+                            <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                        </svg>
+                        Tuwaiq Academy
+                    </h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Cloud Computing Architecture using Google Cloud &nbsp;|&nbsp; 2025</p>
+                </div>
+                <div class="skill-category">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="6"></circle>
+                            <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                        </svg>
+                        Build Infrastructure with Terraform
+                    </h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Google Cloud Skill Badge &nbsp;|&nbsp; 2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
     <section id="contact" class="contact">
         <div class="container fade-in">
             <h2>Get In Touch</h2>
             <div class="contact-content">
-                <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll
-                    try my best to get back to you!</p>
-                <a href="mailto:abdulkarim.alarifi@outlook.com" class="btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                    </svg>
-                    abdulkarim.alarifi@outlook.com
-                </a>
+                <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="mailto:abdulkarim.alarifi@outlook.com" class="btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                        Email Me
+                    </a>
+                    <a href="https://linkedin.com/in/abdulkarim-alarifi-603664220" target="_blank" class="btn" style="background: #0077b5;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/Abdulkarim-Alarifi" target="_blank" class="btn" style="background: #333;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -840,16 +889,13 @@
     </footer>
 
     <script>
-        // Set current year
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Theme toggle logic
         const themeToggle = document.getElementById('theme-toggle');
         const html = document.documentElement;
         const moonIcon = document.getElementById('moon-icon');
         const sunIcon = document.getElementById('sun-icon');
 
-        // Check system preference on load
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
             html.setAttribute('data-theme', 'light');
             moonIcon.style.display = 'block';
@@ -860,7 +906,6 @@
             const currentTheme = html.getAttribute('data-theme');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
             html.setAttribute('data-theme', newTheme);
-
             if (newTheme === 'dark') {
                 moonIcon.style.display = 'none';
                 sunIcon.style.display = 'block';
@@ -870,53 +915,34 @@
             }
         });
 
-        // Intersection Observer for scroll animations
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.15
-        };
-
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
-                    observer.unobserve(entry.target); // Unobserve after animating
+                    observer.unobserve(entry.target);
                 }
             });
-        }, observerOptions);
+        }, { root: null, rootMargin: '0px', threshold: 0.15 });
 
-        // Observe all elements with .fade-in
-        document.querySelectorAll('.fade-in').forEach(element => {
-            observer.observe(element);
-        });
+        document.querySelectorAll('.fade-in').forEach(element => observer.observe(element));
 
-        // Ensure hero elements are visible immediately on load
         window.addEventListener('load', () => {
             setTimeout(() => {
-                document.querySelectorAll('#hero .fade-in').forEach(el => {
-                    el.classList.add('visible');
-                });
+                document.querySelectorAll('#hero .fade-in').forEach(el => el.classList.add('visible'));
             }, 100);
         });
 
-        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
                 if (targetId === '#') return;
-
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
+                    window.scrollTo({ top: targetElement.offsetTop, behavior: 'smooth' });
                 }
             });
         });
     </script>
 </body>
-
 </html>
